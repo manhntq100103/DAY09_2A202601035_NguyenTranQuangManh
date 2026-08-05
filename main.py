@@ -1,6 +1,5 @@
-def main():
-    print("Hello from day09-2a202601035-nguyentranquangmanh!")
+from src.batch import main
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

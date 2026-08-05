@@ -39,4 +39,4 @@ Coordinator là điểm vào duy nhất: nhận `case_id` và `claimed_order_id`
 
 ## Hiện trạng triển khai
 
-`src/agents/graph.py` đã khai báo và compile topology LangGraph cùng contract handoff. Coordinator, các agent domain và Policy Agent hiện đã truy xuất facts chuẩn hóa, tạo evidence có nguồn và áp dụng `EC_POLICY_V1` theo thứ tự ưu tiên. Việc xây JSON output/trace thuộc bước 4; validation đầy đủ schema và evidence-set thuộc bước 5.
+`src/agents/graph.py` đã khai báo và compile topology LangGraph cùng contract handoff. Coordinator, các agent domain và Policy Agent hiện đã truy xuất facts chuẩn hóa, tạo evidence có nguồn và áp dụng `EC_POLICY_V1` theo thứ tự ưu tiên. `src/batch.py` chạy 50 case, sinh JSON output, trace handoff và metadata. Validation đầy đủ schema và evidence-set thuộc bước 5.
